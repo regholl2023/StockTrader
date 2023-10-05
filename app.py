@@ -9,7 +9,7 @@ load_dotenv()
 API_KEY_ID = os.environ.get('ALPACA_API_KEY_ID')
 API_KEY_SECRET = os.environ.get('ALPACA_API_KEY_SECRET')
 
-# Initialize Alpaca API
+# Init Alpaca API 
 api = REST('ALPACA_API_KEY_ID', 'ALPACA_API_KEY_SECRET', base_url='https://paper-api.alpaca.markets')  # Use paper trading endpoint for testing
 
 @app.route('/')

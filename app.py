@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 load_dotenv()
-#API Keys
+#API Key
 API_KEY_ID = os.environ.get('ALPACA_API_KEY_ID')
 API_KEY_SECRET = os.environ.get('ALPACA_API_KEY_SECRET')
 

@@ -11,7 +11,7 @@ load_dotenv(dotenv_path)
 API_KEY_ID = os.environ.get('ALPACA_API_KEY_ID')
 API_KEY_SECRET = os.environ.get('ALPACA_API_KEY_SECRET')
 
-# Init Alpaca API. Use paper trading endpoint for testing.
+# Init Alpaca API. Use paper trading endpoint for testing
 # api = alpaca_trade_api.REST('ALPACA_API_KEY_ID', 'ALPACA_API_KEY_SECRET', base_url='https://paper-api.alpaca.markets')  
 
 
@@ -25,7 +25,7 @@ def index():
     # Create a welcome message
     welcome_message = "Welcome to the Automated Stock Trading Platform!"
     
-    # Combine the welcome message and cash balance as HTML
+    # Combine the welcome message and cash balance as HTML.
     page_content = f"<h1>{welcome_message}</h1><p>Cash Balance: ${cash_balance:.2f}</p>"
     return page_content
 
